@@ -1,2 +1,16 @@
 features:
   command_center: true
+  add_new_block_v2: true
+  compute_management: false
+  custom_design: true
+  data_integration_in_batch_pipeline: true
+  dbt_v2: true
+  global_hooks: true
+  interactions: true
+  notebook_block_output_split_view: true
+  operation_history: true
+help_improve_mage:
+pipelines:
+  settings:
+    triggers:
+      save_in_code_automatically: true
