@@ -1,0 +1,3 @@
+sync_config:
+  auth_type: ssh
+  repo_path: /home/src/quokka_orchestration
