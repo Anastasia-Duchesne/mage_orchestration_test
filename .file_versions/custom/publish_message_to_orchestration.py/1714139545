@@ -21,7 +21,6 @@ data_to_publish = {
 def call_google_function(**kwargs):
     os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '/root/.ssh/google_credentials.json'
     request = google.auth.transport.requests.Request()
-    api_post_url = kwargs['orchestration_testing_post_url']
     TOKEN = google.oauth2.id_token.fetch_id_token(request, api_post_url)
 
     r = requests.post(

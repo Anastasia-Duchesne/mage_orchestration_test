@@ -4,7 +4,6 @@ import requests
 import google.oauth2.id_token
 import google.auth.transport.requests
 
-
 data_to_publish = {
     "data": {
         "message": {
@@ -17,17 +16,21 @@ data_to_publish = {
     "id": "mage"
 }
 
+api_post_url = 'https://europe-west1-ake-actionable-product-data-dv.cloudfunctions.net/orchestration_testing'
+
 @custom
-def call_google_function(**kwargs):
+def call_google_function():
     os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '/root/.ssh/google_credentials.json'
     request = google.auth.transport.requests.Request()
-    api_post_url = kwargs['orchestration_testing_post_url']
-    TOKEN = google.oauth2.id_token.fetch_id_token(request, api_post_url)
+    audience = 
+    TOKEN = google.oauth2.id_token.fetch_id_token(request, audience)
 
     r = requests.post(
-        api_post_url, 
+        audience, 
         headers={'Authorization': f"Bearer {TOKEN}", "Content-Type": "application/json"},
-        data=json.dumps(data_to_publish)
+        data=json.dumps(
+            
+        )
     )
 
     print(r.status_code)

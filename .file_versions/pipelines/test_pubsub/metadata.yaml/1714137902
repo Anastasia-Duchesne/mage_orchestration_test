@@ -9,7 +9,7 @@ blocks:
   language: python
   name: publish_message_to_orchestration
   retry_config: null
-  status: executed
+  status: failed
   timeout: null
   type: custom
   upstream_blocks: []
@@ -36,7 +36,5 @@ spark_config: {}
 tags: []
 type: python
 uuid: test_pubsub
-variables:
-  orchestration_testing_post_url: https://europe-west1-ake-actionable-product-data-dv.cloudfunctions.net/orchestration_testing
 variables_dir: /home/src/mage_data/quokka_orchestration
 widgets: []

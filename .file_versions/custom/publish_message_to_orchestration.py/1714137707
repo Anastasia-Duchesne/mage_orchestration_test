@@ -1,0 +1,16 @@
+import os
+import json
+import requests
+import google.oauth2.id_token
+import google.auth.transport.requests
+
+os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '/root/.ssh/google_credentials.json'
+request = google.auth.transport.requests.Request()
+audience = 'https://mylocation-myprojectname.cloudfunctions.net/MyFunctionName'
+TOKEN = google.oauth2.id_token.fetch_id_token(request, audience)
+
+r = requests.post(
+    audience, 
+    headers={'Authorization': f"Bearer {TOKEN}", "Content-Type": "application/json"}
+)
+r.status_code, r.reason

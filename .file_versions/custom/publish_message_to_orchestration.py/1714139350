@@ -1,0 +1,30 @@
+import os
+import json
+import requests
+import google.oauth2.id_token
+import google.auth.transport.requests
+
+@custom
+def call_google_function():
+    os.environ['GOOGLE_APPLICATION_CREDENTIALS'] = '/root/.ssh/google_credentials.json'
+    request = google.auth.transport.requests.Request()
+    audience = 'https://europe-west1-ake-actionable-product-data-dv.cloudfunctions.net/orchestration_testing:call'
+    TOKEN = google.oauth2.id_token.fetch_id_token(request, audience)
+
+    r = requests.post(
+        audience, 
+        headers={'Authorization': f"Bearer {TOKEN}", "Content-Type": "application/json"},
+        data=json.dumps(
+            {
+            "data": {
+                "message": {
+                "_comment": "data is base64 encoded string of 'Hello World'",
+                "data": "SGVsbG8gV29ybGQ="
+                }
+            }
+            }
+        )
+    )
+
+    print(r.status_code)
+    print(r.reason)

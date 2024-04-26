@@ -1,0 +1,12 @@
+triggers:
+- envs: []
+  last_enabled_at: 2024-04-26 13:53:42.404142+00:00
+  name: revered bird
+  pipeline_uuid: test_pubsub
+  schedule_interval: null
+  schedule_type: null
+  settings: null
+  sla: null
+  start_time: null
+  status: active
+  variables: null

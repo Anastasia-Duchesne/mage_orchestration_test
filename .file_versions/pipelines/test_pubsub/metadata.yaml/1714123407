@@ -9,11 +9,26 @@ blocks:
   language: python
   name: publish_message_to_orchestration
   retry_config: null
-  status: executed
+  status: not_executed
   timeout: null
   type: custom
   upstream_blocks: []
   uuid: publish_message_to_orchestration
+- all_upstream_blocks_executed: true
+  color: null
+  configuration: {}
+  downstream_blocks: []
+  executor_config: null
+  executor_type: local_python
+  has_callback: false
+  language: python
+  name: orchestration_testing_pubsub
+  retry_config: null
+  status: not_executed
+  timeout: null
+  type: data_loader
+  upstream_blocks: []
+  uuid: orchestration_testing_pubsub
 cache_block_output_in_memory: false
 callbacks: []
 concurrency_config: {}
@@ -36,7 +51,5 @@ spark_config: {}
 tags: []
 type: python
 uuid: test_pubsub
-variables:
-  orchestration_testing_post_url: https://europe-west1-ake-actionable-product-data-dv.cloudfunctions.net/orchestration_testing
 variables_dir: /home/src/mage_data/quokka_orchestration
 widgets: []
