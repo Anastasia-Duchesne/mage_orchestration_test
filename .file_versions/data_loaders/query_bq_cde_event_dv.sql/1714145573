@@ -1,0 +1,1 @@
+SELECT max(emitted_at) as max_dat FROM `ake-actionable-product-data-dv.technical.cde_event`

@@ -1,0 +1,94 @@
+description: This template shows how to query BQ and use the output of the query in
+  a Python script
+name: Query BigQuery in dev & use output as dataframe in Python script
+pipeline:
+  blocks:
+  - all_upstream_blocks_executed: true
+    callback_blocks: []
+    color: null
+    conditional_blocks: []
+    configuration:
+      data_provider: bigquery
+      data_provider_profile: default
+      dbt: {}
+      disable_query_preprocessing: false
+      export_write_policy: append
+      limit: 1000
+      use_raw_sql: true
+    downstream_blocks:
+    - use_bq_queried_data
+    executor_config: null
+    executor_type: local_python
+    has_callback: false
+    language: sql
+    metadata: {}
+    name: query_bq
+    pipelines:
+    - added_at: 1714146081.547656
+      pipeline:
+        created_at: '2024-04-26 15:02:33.374242+00:00'
+        description: null
+        name: query_bq_and_use_resulted_df
+        repo_path: quokka_orchestration
+        tags: []
+        type: python
+        uuid: great_forest
+      updated_at: 1714146081.547906
+    retry_config: null
+    status: updated
+    tags: []
+    timeout: null
+    type: data_loader
+    upstream_blocks: []
+    uuid: query_bq
+  - all_upstream_blocks_executed: false
+    callback_blocks: []
+    color: yellow
+    conditional_blocks: []
+    configuration:
+      data_provider: bigquery
+      data_provider_profile: default
+      export_write_policy: append
+    downstream_blocks: []
+    executor_config: null
+    executor_type: local_python
+    has_callback: false
+    language: python
+    metadata: {}
+    name: use_bq_queried_data
+    pipelines: []
+    retry_config: null
+    status: executed
+    tags: []
+    timeout: null
+    type: custom
+    upstream_blocks:
+    - query_bq
+    uuid: use_bq_queried_data
+  cache_block_output_in_memory: false
+  callbacks: []
+  concurrency_config: {}
+  conditionals: []
+  created_at: '2024-04-26 15:02:33.374242+00:00'
+  data_integration: null
+  description: null
+  executor_config: {}
+  executor_count: 1
+  executor_type: null
+  extensions: {}
+  name: query_bq_and_use_resulted_df
+  notification_config: {}
+  remote_variables_dir: null
+  retry_config: {}
+  run_pipeline_in_one_process: false
+  settings:
+    triggers: null
+  spark_config: {}
+  tags: []
+  type: python
+  uuid: query_bq_and_use_output_in_python
+  variables_dir: /home/src/mage_data/quokka_orchestration
+  widgets: []
+tags: []
+user:
+  username: anastasia

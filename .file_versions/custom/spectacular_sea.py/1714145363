@@ -1,0 +1,9 @@
+# Assuming a previous block loaded data into a DataFrame `df`
+
+from mage_ai.data_preparation.decorators import custom
+from pandas import DataFrame
+
+@custom
+def analyze_loaded_data(data, *args, **kwargs):
+    # Your analysis logic here
+    print(data)

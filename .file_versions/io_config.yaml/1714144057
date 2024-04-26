@@ -1,0 +1,14 @@
+version: 0.1.1
+default:
+  GOOGLE_SERVICE_ACC_KEY:
+    type: service_account
+    project_id: ake-actionable-product-data-dv
+    private_key_id: 586d8a49371f4cad05c0d31134141bc976cd5c3c
+    private_key:
+      "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQDm2uxBXW+5fYNW\nsJC8Pv3kW4uPqFHoc7ZZc4FCp2E2hqiYRhncjsdy2/EeZpHKpMC5WmpsJhOek5wv\nRU/KWJ3Y/VJ4QMnCCrt/MhM3pztNfwLKsPnuGD13YMs4bKz/UyuLnp7HH7QoQHFU\nI68u9RfMfP38MYQVMxxrKxYx2U/HVvTe+5zkufvrXzZ7GdWCQVGYN6lb9LxXLoEb\nt/1xp5yviUvneY8cEf2exoPOn7SX4A50YIH0bqOooGIZrUDXfPEyJD+NNZCCss8+\n74Glb5rKqXSeZoOdq6XcC+69ngrHJOFUFhWBXNpgNqpLRCBs3yjqu/VTVIvU0pss\nDq2d4vj7AgMBAAECggEAWlIjBzvwX2lc/ojcR9p5aWPryYv4Z/MF0B+h3hswrK2o\nvtMGgUWXgTfOMa+9sMQe5yYZ5zBKkst72v7KRge/0krifkwS5Alg7FYCMM8MI7ji\ntbziPCZdvhwvxma2lLrMmba4tn2P9gOok1vWyY94/TeWA5q367dwkflsmJpGXV3I\n3QSUMd97/RiGHfffAWU3Mbm4ZaqeQCkCGtxq3Bo91moDkJ7G3+EbtHXP5v8o04Tp\nf8YVT9WvswXvfGqBIeBDLk/1CcV1XX7CFSSCTJza2mvmpcLkMc+zWXRbBMsjnOVS\nZ+f1+nnyDhKVcfsVehnTUzSZRGWjFo+dVFdl7znXCQKBgQD78uODSRLQj/wLuT1e\nm2ZOzaSiQ6msClcOcTkEGUXpNVewZyS3uApIyCVBu9YaPi6ZEWitpIeQDPPo5Uzz\nZhohcxTJ0WUiD5cc4EbEUx1sV/di1RrUjjx2Pb2IPYAgR3JouYhUFOz1mggEOiM6\njn3ivzvnqvLBVXp1u7RotfLtDQKBgQDqkTSNZeb9ELjJqvfNColBhXxfbfdCO38t\nN/G5F8tIV6P+k4b545DmnO1aRDzZodmp+bsV9TKrkVBgOJl5t9vyakE8ln+9Q42Z\nOyPeMA3qhigo32oyBgU77Ve186PoSDJacJPJfH38Wy/r5kB7lkhMwlHF0qUwLr8S\njz7wr0VMJwKBgDGBBv0LxZufPunaytkk9ZQ0Sc3sN5FrMrHOw2IvyRHKfmFV0twa\nWEL2uINS8f2UDDndNtEvi8ddFCvFqjoE7Mt3vjTtZM6te4ab9quqnRRlsGEF+FCd\nZfnhpbT4SI2PHEbBdaz3s5uKWVrjRXrC9q8v3ghmCW69aeNqL0eHwKSdAoGBAKcp\nM7pQlHxkHkwZet60U3xOFIQtabfZjpg69hhhzIyRaF1T5SzP78Nosf1SA8tUfDmV\nrq3HP4Tk2dK4gycqz6PB9RuoZQAL1C0O6FC/DivDz3rRPGzJvZEnYwpXxscSLFAn\nSiqcfWwJz+zc+bcZMg0BriS8KNxdc+1WCBSd01ShAoGBAIl+QRGGfuidM0aomKf7\nTBaMA/YE3/vwbVnd0FaFTiLQAyToOCpknZXLK2qZObyCakYrOH3Y/oLtqcwa1Pp0\nVbLn8ya7NqY/XRVbDCSCYi0GNj3pjKWHkd8Yb53pr9bK67SCnUHtGass1cYNY7wm\nxOW+Msya1EBimmWS4hNdXlYo\n-----END PRIVATE KEY-----\n"
+    client_email: orchestration-mage-test@ake-actionable-product-data-dv.iam.gserviceaccount.com
+    auth_uri: "https://accounts.google.com/o/oauth2/auth"
+    token_uri: "https://accounts.google.com/o/oauth2/token"
+    auth_provider_x509_cert_url: "https://www.googleapis.com/oauth2/v1/certs"
+    client_x509_cert_url: "https://www.googleapis.com/robot/v1/metadata/x509/your_service_account_email"
+  GOOGLE_SERVICE_ACC_KEY_FILEPATH: "/root/.ssh/google_credentials.json"
