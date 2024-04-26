@@ -14,3 +14,4 @@ pipelines:
   settings:
     triggers:
       save_in_code_automatically: true
+project_uuid: f49efa17ee9048c5b9c63847c02519f2

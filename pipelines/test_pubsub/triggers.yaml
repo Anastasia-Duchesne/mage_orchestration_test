@@ -3,10 +3,11 @@ triggers:
   last_enabled_at: 2024-04-26 13:53:42.404142+00:00
   name: revered bird
   pipeline_uuid: test_pubsub
-  schedule_interval: null
-  schedule_type: null
+  schedule_interval: '@once'
+  schedule_type: time
   settings: null
   sla: null
-  start_time: null
+  start_time: 2024-04-26 14:05:00+00:00
   status: active
-  variables: null
+  variables:
+    orchestration_testing_post_url: https://europe-west1-ake-actionable-product-data-dv.cloudfunctions.net/orchestration_testing
