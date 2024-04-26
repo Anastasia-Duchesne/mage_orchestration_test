@@ -1,0 +1,10 @@
+block_type: custom
+color: null
+configuration: null
+description: This is a basic template to run a dbt Cloud job
+language: python
+name: Run a dbt cloud job
+pipeline: {}
+tags: []
+user:
+  username: anastasia
