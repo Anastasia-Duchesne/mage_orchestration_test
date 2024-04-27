@@ -148,6 +148,7 @@ dmypy.json
 
 # pytype static type analyzer
 .pytype/
+.ssh_tunnel/
 
 # Cython debug symbols
 cython_debug/
