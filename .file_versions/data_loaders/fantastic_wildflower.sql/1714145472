@@ -1,1 +1,0 @@
-SELECT max(e) FROM `ake-actionable-product-data-dv.technical.cde_event` LIMIT 1000

@@ -1,2 +1,0 @@
--- Docs: https://docs.mage.ai/guides/sql-blocks
-SELECT max(em) FROM `ake-actionable-product-data-dv.technical.cde_event`
